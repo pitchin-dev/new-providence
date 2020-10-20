@@ -7,10 +7,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>New Providence</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
   <link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap Grid -->
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/animate.min.css"><!-- Animate -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link rel="stylesheet" href="css/magnific-popup.css"> <!-- Resource style -->
@@ -21,19 +18,21 @@
 
   <header class="header">
     <div class="container">
-      <div class="header__burger"></div>
-      <div class="header__panel">
-        <ul class="header__menu--left">
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-        </ul>
-        <img src="images/logo.png" alt="logo" class="header__logo">
-        <ul class="header__menu--right">
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-          <li class="header__menu__item"><a href="" class="header__menu__link"></a></li>
-        </ul>
+      <div class="header__inner">
+        <div class="header__burger"></div>
+        <div class="header__panel">
+          <ul class="header__menu header__menu--left">
+            <li class="header__menu__item"><a href="" class="header__menu__link">Tour</a></li>
+            <li class="header__menu__item"><a href="" class="header__menu__link">Features</a></li>
+            <li class="header__menu__item"><a href="" class="header__menu__link">Pricing</a></li>
+          </ul>
+          <img src="images/logo.png" alt="logo" class="header__logo">
+          <ul class="header__menu header__menu--right">
+            <li class="header__menu__item"><a href="" class="header__menu__link">Help</a></li>
+            <li class="header__menu__item"><a href="" class="header__menu__link">Contacts</a></li>
+            <li class="header__menu__item"><a href="" class="header__menu__link">Get App</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -50,7 +49,7 @@
             The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
           </p>
           <a href="#" class="btn about__btn">Watch Video</a>
-          <img src="images/header_iphone.png" alt="iphone" class="about__img">
+          <img src="images/header_iphone.png" alt="iphone" class="about__img animated fadeInUp wow">
         </div>
       </div>
     </section><!--about-->
@@ -61,7 +60,7 @@
       <div class="container">
         <div class="features__inner">
 
-          <div class="features__left">
+          <div class="features__block features__block--left">
             <img src="" alt="" class="features__img">
             <h2 class="features__header">Real-time all the time</h2>
             <p class="features__text">
@@ -72,7 +71,7 @@
             </p>
           </div>
 
-          <div class="features__right">
+          <div class="features__block features__block--right">
             <img src="" alt="" class="features__img">
             <h2 class="features__header">Adopt without any obstacles</h2>
             <p class="features__text">
@@ -93,11 +92,11 @@
       <div class="container">
         <div class="protect__inner">
 
-          <div class="protect__left">
-            <img src="images/iphone-feature.png" alt="iphone-feature" class="protect__img">
+          <div class="protect__block protect__block--left">
+            <img src="images/iphone-feature.png" alt="iphone-feature" class="protect__img animated fadeInLeft wow">
           </div>
 
-          <div class="protect__right">
+          <div class="protect__block protect__block--right">
             <h2 class="protect__header">Your day is protected</h2>
             <p class="protect__text">
               There have not been any since we have lived here, said my mother. 
@@ -106,7 +105,7 @@
               We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.
             </p>
             <div class="protect__buttons">
-              <button class="protect__btn-blue btn">Try to hack us</button>
+              <button class="protect__btn btn">Try to hack us</button>
               <button class="protect__btn btn">Learn more</button>
             </div>
           </div>
@@ -121,7 +120,7 @@
       <div class="container">
         <div class="worldwide__inner">
 
-          <div class="worldwide__left">
+          <div class="worldwide__block worldwide__block--left">
             <h2 class="worldwide__header">We are almost everywhere</h2>
             <p class="worldwide__text">
               Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.
@@ -136,8 +135,8 @@
             </div>
           </div>
           
-          <div class="worldwide__right">
-            <img src="images/map.png" alt="map" class="worldwide__map">
+          <div class="worldwide__block worldwide__block--right">
+            <img src="images/map.png" alt="map" class="worldwide__img">
           </div>
 
         </div>
@@ -153,13 +152,13 @@
           <h3 class="interface__subtitle">Landing Screen</h3>
           <div class="interface__carousel">
             <li class="interface__carousel__item">
-              <img src="images/interface/main-img.png" alt="first-image" class="interface__carousel__item__img">
-            </li>
-            <li class="interface__carousel__item">
               <img src="images/interface/img-1.png" alt="second-image" class="interface__carousel__item__img">
             </li>
             <li class="interface__carousel__item">
               <img src="images/interface/img-2.png" alt="third-image" class="interface__carousel__item__img">
+            </li>
+            <li class="interface__carousel__item">
+              <img src="images/interface/main-img.png" alt="first-image" class="interface__carousel__item__img">
             </li>
             <li class="interface__carousel__item">
               <img src="images/interface/img-3.png" alt="fourth-image" class="interface__carousel__item__img">
@@ -181,6 +180,7 @@
           <h2 class="invite__header">Get it to your smartphone</h2>
           <form class="invite__form">
             <input type="text" class="invite__input">
+            <button class="invite__btn">Send Invite</button>
           </form>
           <h3 class="invite__subtitle">or Download From</h3>
           <a href="#" class="apple__btn">
@@ -198,6 +198,18 @@
 
             <div class="feedback__carousel__item">
               <img src="images/user1.jpg" alt="user1" class="feedback__carousel__item__img">
+              <h3 class="feedback__carousel__item__header">New Providence is the great UI kit</h3>
+              <p class="feedback__carousel__item__text">
+                “Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”
+              </p>
+              <div class="feedback__carousel__item__stars">
+
+              </div>
+              <span class="feedback__carousel__item__name">Cameron Dowman</span>
+            </div>
+
+            <div class="feedback__carousel__item">
+              <img src="images/user2.jpg" alt="user1" class="feedback__carousel__item__img">
               <h3 class="feedback__carousel__item__header">New Providence is the great UI kit</h3>
               <p class="feedback__carousel__item__text">
                 “Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”
@@ -259,6 +271,7 @@
           <h2 class="subscribe__header">Subscribe our newsletters</h2>
           <form class="subscribe__form">
             <input type="text" class="subscribe__input">
+            <button class="subscribe__btn">Subscribe</button>
           </form>
           <span class="subscribe__spam">We promise to never spam you.</span>
         </div>
@@ -358,7 +371,6 @@
   </footer>
 
   <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
-  <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
   <script src="js/wow.min.js"></script>  <!-- wow -->
   <script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
   <script src="js/main.js"></script>  <!-- Main Script -->
