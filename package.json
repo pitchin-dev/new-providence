@@ -1,0 +1,23 @@
+{
+  "name": "new-providence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitchin-dev/new-providence.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pitchin-dev/new-providence/issues"
+  },
+  "homepage": "https://github.com/pitchin-dev/new-providence#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
