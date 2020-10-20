@@ -74,6 +74,11 @@ body {
     &--interface {
         background-color: $bggrey;
         overflow: hidden;
+        padding-bottom: 180px;
+    }
+    &--invite {
+        background-color: $bggrey;
+        padding-bottom: 130px;
     }
 }
 
@@ -242,5 +247,55 @@ body {
                 margin-right: 0;
             }
         }
+    }
+}
+
+.invite {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subtitle {
+        margin-top: 0;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $grey;
+        letter-spacing: 0.1rem;
+    }
+    &__header {
+        font-size: 42px;
+        font-weight: 400;
+    }
+    &__input {
+        border: none;
+        outline: none;
+        background-color: $bggrey;
+        height: 40px;
+        width: 300px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__btn {
+        width: 200px;
+        height: 42px;
+        background-color: #6fc754;
+        border: none;
+        border-radius: 42px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__form {
+        width: 500px;
+        height: 50px;
+        border: 1px solid $inputgrey;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 4px;
+        margin-bottom: 60px;
     }
 }
