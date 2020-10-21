@@ -1,10 +1,22 @@
 @import './_variables.scss';
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
 body {
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -57,7 +69,8 @@ body {
     top: 0;
     left: 0;
     background-color: transparent;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     z-index: 1000;
     transition: all .3s linear;
     &.active {
@@ -67,8 +80,8 @@ body {
         background-color: #fff;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
         transform: scaleY(0.95);
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         margin-top: 0;
     }
     &__inner {
