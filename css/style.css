@@ -23,6 +23,18 @@ ul, li {
 .gold {
   color: gold; }
 
+.btn__blue {
+  background-color: transparent;
+  border: 1px solid #267df4;
+  transition: all .3s linear;
+  outline: none;
+  color: #267df4; }
+  .btn__blue:hover {
+    background-color: #267df4;
+    color: #fff; }
+  .btn__blue:active {
+    background-color: #0b63dc; }
+
 .form {
   width: 500px;
   height: 50px;
@@ -49,7 +61,12 @@ ul, li {
     border-radius: 42px;
     color: #fff;
     font-weight: 500;
-    font-size: 18px; }
+    font-size: 18px;
+    outline: none; }
+    .form__btn:hover {
+      background-color: #55af39; }
+    .form__btn:active {
+      background-color: #4c9c33; }
 
 /**********HEADER**********/
 .header {
@@ -85,6 +102,7 @@ ul, li {
     margin-left: -100px; }
   .header__menu {
     display: flex;
+    align-items: center;
     list-style: none;
     padding-left: 0; }
     .header__menu__item {
@@ -99,6 +117,23 @@ ul, li {
       transition: all .2s linear; }
       .header__menu__link:hover {
         color: #267df4; }
+      .header__menu__link--app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        border: 1px solid #267df4;
+        border-radius: 40px;
+        background-color: #267df4;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s linear; }
+        .header__menu__link--app:hover {
+          background-color: #000;
+          border-color: #000; }
+        .header__menu__link--app i {
+          margin-right: 5px; }
 
 /*********SECTIONS*********/
 .section {
@@ -165,6 +200,8 @@ ul, li {
     background-color: #267df4;
     color: #fff;
     border-color: #267df4; }
+  .about__btn:active {
+    background-color: #0b63dc; }
 
 /*********FEATURES*********/
 .features__inner {
@@ -222,16 +259,10 @@ ul, li {
   width: 200px;
   height: 50px;
   margin-right: 30px;
-  background-color: transparent;
-  border: 1px solid #e9e9ea;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 500;
   transition: all .3s linear; }
-  .protect__btn:hover {
-    background-color: #267df4;
-    border-color: #267df4;
-    color: #fff; }
 
 /*********WORLDWIDE*********/
 .worldwide__inner {
