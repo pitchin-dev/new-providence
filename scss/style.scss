@@ -30,6 +30,21 @@ ul, li {
     color: gold;
 }
 
+.btn__blue {
+    background-color: transparent;
+    border: 1px solid $blue;
+    transition: all .3s linear;
+    outline: none;
+    color: $blue;
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+    &:active {
+        background-color: darken($blue, 10%);
+    }
+}
+
 .form {
     width: 500px;
     height: 50px;
@@ -58,6 +73,13 @@ ul, li {
         color: #fff;
         font-weight: 500;
         font-size: 18px;
+        outline: none;
+        &:hover {
+            background-color: darken(#6fc754, 10%);
+        }
+        &:active {
+            background-color: darken(#6fc754, 15%);
+        }
     }
 }
 
@@ -101,6 +123,7 @@ ul, li {
     }
     &__menu {
         display: flex;
+        align-items: center;
         list-style: none;
         padding-left: 0;
         &__item {
@@ -117,6 +140,26 @@ ul, li {
             transition: all .2s linear;
             &:hover {
                 color: $blue;
+            }
+            &--app {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 40px;
+                border: 1px solid $blue;
+                border-radius: 40px;
+                background-color: $blue;
+                color: #fff;
+                text-decoration: none;
+                transition: all .3s linear;
+                &:hover {
+                    background-color: #000;
+                    border-color: #000;
+                }
+                & i {
+                    margin-right: 5px;
+                }
             }
         }
     }
@@ -197,6 +240,9 @@ ul, li {
             color: #fff;
             border-color: $blue;
         }
+        &:active {
+            background-color: darken($blue, 10%);
+        }
     }
 }
 
@@ -265,17 +311,11 @@ ul, li {
         width: 200px;
         height: 50px;
         margin-right: 30px;
-        background-color: transparent;
-        border: 1px solid $btngrey;
         border-radius: 50px;
         font-size: 18px;
         font-weight: 500;
         transition: all .3s linear;
-        &:hover {
-            background-color: $blue;
-            border-color: $blue;
-            color: #fff;
-        }
+        
     }
 }
 
