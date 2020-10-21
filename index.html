@@ -180,9 +180,9 @@
         <div class="invite__inner animated wow fadeInUp">
           <h3 class="invite__subtitle">NewProvidence</h3>
           <h2 class="invite__header">Get it to your smartphone</h2>
-          <form class="invite__form">
-            <input type="text" class="invite__input">
-            <button class="invite__btn">Send Invite</button>
+          <form class="invite__form form">
+            <input type="text" class="invite__input form__input">
+            <button class="invite__btn form__btn">Send Invite</button>
           </form>
           <h3 class="invite__subtitle">or Download From</h3>
           <a href="#" class="apple__btn">
@@ -236,7 +236,7 @@
       <div class="container">
         <div class="plan__inner">
 
-          <div class="plan__choose">
+          <div class="plan__choose animated wow fadeInUp" data-wow-delay=".1s">
             <h2 class="plan__choose__header">Choose your perfect plan</h2>
             <span class="plan__choose__subtitle">You are</span>
             <div class="toggle-container cf">
@@ -254,22 +254,22 @@
           </div>
 
           <div class="plan__items">
-            <div class="plan__item">
+            <div class="plan__item animated wow fadeInUp active" data-wow-delay=".2s">
               <h3 class="plan__item__header">Starter</h3>
               <div class="plan__item__price">Free</div>
               <h4 class="plan__item__subtitle">Build your schedule every day</h4>
-              <div class="plan__item__feature">Unlimited events</div>
-              <div class="plan__item__feature">Connect Dropbox&Everynote</div>
+              <div class="plan__item__feature"><i class="fa fa-check"></i>Unlimited events</div>
+              <div class="plan__item__feature"><i class="fa fa-check"></i>Connect Dropbox&Everynote</div>
               <button class="plan__item__btn">Get Started</button>
             </div>
   
-            <div class="plan__item">
+            <div class="plan__item animated wow fadeInUp" data-wow-delay=".3s">
               <h3 class="plan__item__header">Pro</h3>
               <div class="plan__item__price">$4.99</div>
               <h4 class="plan__item__subtitle">Make your life better</h4>
-              <div class="plan__item__feature">Unlimited events</div>
-              <div class="plan__item__feature">Connect Dropbox&Everynote</div>
-              <div class="plan__item__feature">Personal assistant</div>
+              <div class="plan__item__feature"><i class="fa fa-check"></i>Unlimited events</div>
+              <div class="plan__item__feature"><i class="fa fa-check"></i>Connect Dropbox&Everynote</div>
+              <div class="plan__item__feature"><i class="fa fa-check"></i>Personal assistant</div>
               <button class="plan__item__btn">Make me a Pro</button>
             </div>
           </div>
@@ -281,11 +281,11 @@
 
     <section class="section section--subscribe">
       <div class="container">
-        <div class="subscribe__inner">
+        <div class="subscribe__inner animated wow fadeInUp">
           <h2 class="subscribe__header">Subscribe our newsletters</h2>
-          <form class="subscribe__form">
-            <input type="text" class="subscribe__input">
-            <button class="subscribe__btn">Subscribe</button>
+          <form class="subscribe__form form">
+            <input type="text" class="subscribe__input form__input" placeholder="Your e-mail">
+            <button class="subscribe__btn form__btn">Subscribe</button>
           </form>
           <span class="subscribe__spam">We promise to never spam you.</span>
         </div>
@@ -299,69 +299,74 @@
       
       <div class="footer__info">
 
-        <div class="footer__info__social">
+        <div class="footer__info__social animated wow fadeInUp" data-wow-delay=".1s">
           <img src="images/logo.png" alt="footer-logo" class="footer__info__social__logo"></img>
           <p class="footer__info__social__text">
             It was some time before he obtained any answer, and the reply, when made, was unpropitious.
           </p>
           <a href="#" class="apple__btn"><img src="images/app-store-download.png" alt="app-store" class="apple__btn__img"></a>
           <div class="footer__info__social__icons">
-
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-tumblr"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
 
         <div class="footer__info__columns">
 
-          <div class="footer__info__column">
+          <div class="footer__info__column animated wow fadeInUp" data-wow-delay=".1s">
             <h4 class="footer__info__column__header">Learn More</h4>
               <ul class="footer__info__column__list">
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">How it works?</a>
+                  <a href="#" class="footer__info__column__list__item__link">How it works?</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Meeting tools</a>
+                  <a href="#" class="footer__info__column__list__item__link">Meeting tools</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Live streaming</a>
+                  <a href="#" class="footer__info__column__list__item__link">Live streaming</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Contact method</a>
+                  <a href="#" class="footer__info__column__list__item__link">Contact method</a>
                 </li>
               </ul>
           </div><!--column-->
 
-          <div class="footer__info__column">
+          <div class="footer__info__column animated wow fadeInUp" data-wow-delay=".2s">
             <h4 class="footer__info__column__header">About us</h4>
               <ul class="footer__info__column__list">
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">About us</a>
+                  <a href="#" class="footer__info__column__list__item__link">About us</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Features</a>
+                  <a href="#" class="footer__info__column__list__item__link">Features</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Privacy policy</a>
+                  <a href="#" class="footer__info__column__list__item__link">Privacy policy</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Terms & Conditions</a>
+                  <a href="#" class="footer__info__column__list__item__link">Terms & Conditions</a>
                 </li>
               </ul>
           </div><!--column-->
 
-          <div class="footer__info__column">
+          <div class="footer__info__column animated wow fadeInUp" data-wow-delay=".3s">
             <h4 class="footer__info__column__header">Support</h4>
               <ul class="footer__info__column__list">
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">F.A.Q.</a>
+                  <a href="#" class="footer__info__column__list__item__link">F.A.Q.</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Contact Us</a>
+                  <a href="#" class="footer__info__column__list__item__link">Contact Us</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Live chat</a>
+                  <a href="#" class="footer__info__column__list__item__link">Live chat</a>
                 </li>
                 <li class="footer__info__column__list__item">
-                  <a href="#" class="footer__info__column__list__item">Phone call</a>
+                  <a href="#" class="footer__info__column__list__item__link">Phone call</a>
                 </li>
               </ul>
           </div><!--column-->
@@ -369,7 +374,7 @@
         </div><!--columns-->
       </div><!--footer-info-->
 
-      <div class="footer__copyright">
+      <div class="footer__copyright animated wow fadeInUp" data-wow-delay=".4s">
         <p class="footer__copyright__visit">
           For more freebies visit: <a href="#" class="footer__copyright__visit__link">http://getcraftwork.com</a>
         </p>
