@@ -8,12 +8,12 @@ $(document).ready(function() {
 
 		// Activate menu
 		if (wScroll > 20) {
-			$('#main-nav').addClass('active');
-			$('#slide_out_menu').addClass('scrolled');
+			$('.header').addClass('active');
+			// $('#slide_out_menu').addClass('scrolled');
 		}
 		else {
-			$('#main-nav').removeClass('active');
-			$('#slide_out_menu').removeClass('scrolled');
+			$('.header').removeClass('active');
+			// $('#slide_out_menu').removeClass('scrolled');
 		};
 
 
