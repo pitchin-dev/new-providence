@@ -60,6 +60,34 @@ body {
     }
     &__burger {
         display: none;
+        // width: 30px;
+        // height: 30px;
+        // &__line {
+        //     position: relative;
+        //     height: 3px;
+        //     width: 30px;
+        //     background-color: #000;
+        //     &:after {
+        //         content: '';
+        //         display: block;
+        //         height: 3px;
+        //         width: 30px;
+        //         background-color: #000;
+        //         position: absolute;
+        //         top: -10px;
+        //         left: 0;
+        //     }
+        //     &:before {
+        //         content: '';
+        //         display: block;
+        //         height: 3px;
+        //         width: 30px;
+        //         background-color: #000;
+        //         position: absolute;
+        //         bottom: -10px;
+        //         left: 0;
+        //     }
+        // }
     }
     &__panel {
         display: flex;
