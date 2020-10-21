@@ -196,6 +196,8 @@ ul, li {
   color: #000;
   font-weight: 500;
   transition: all .3s linear; }
+  .about__btn i {
+    margin-right: 10px; }
   .about__btn:hover {
     background-color: #267df4;
     color: #fff;
@@ -256,13 +258,17 @@ ul, li {
   margin-top: 60px; }
 
 .protect__btn {
-  width: 200px;
+  width: 130px;
   height: 50px;
   margin-right: 30px;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 500;
   transition: all .3s linear; }
+  .protect__btn:first-child {
+    width: 200px; }
+    .protect__btn:first-child i {
+      margin-left: 30px; }
 
 /*********WORLDWIDE*********/
 .worldwide__inner {
