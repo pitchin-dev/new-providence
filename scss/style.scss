@@ -1,12 +1,5 @@
 @import './_variables.scss';
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%
-}
-
 body {
     box-sizing: border-box;
     font-size: 16px;
@@ -46,7 +39,7 @@ ul, li {
 }
 
 .form {
-    width: 500px;
+    max-width: 500px;
     height: 50px;
     border: 1px solid $inputgrey;
     border-radius: 50px;
@@ -60,12 +53,12 @@ ul, li {
         outline: none;
         background-color: $bggrey;
         height: 40px;
-        width: 300px;
+        max-width: 300px;
         font-size: 18px;
         font-weight: 500;
     }
     &__btn {
-        width: 200px;
+        max-width: 200px;
         height: 42px;
         background-color: #6fc754;
         border: none;
@@ -86,8 +79,8 @@ ul, li {
 
 /**********HEADER**********/
 .header {
-    width: 100%;
-    position: fixed;
+    width: 100vw;
+    position: relative;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -101,7 +94,6 @@ ul, li {
         left: 0;
         background-color: #fff;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
-        transform: scaleY(0.95);
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: 0;
@@ -168,7 +160,6 @@ ul, li {
 
 /*********SECTIONS*********/
 .section {
-    width: 100%;
     &--about {
         height: 850px;
         padding-top: 200px;
@@ -400,6 +391,7 @@ ul, li {
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         &__item {
             margin-right: 40px;
             list-style: none;
@@ -436,12 +428,12 @@ ul, li {
         outline: none;
         background-color: $bggrey;
         height: 40px;
-        width: 300px;
+        max-width: 300px;
         font-size: 18px;
         font-weight: 500;
     }
     &__btn {
-        width: 200px;
+        max-width: 200px;
         height: 42px;
         background-color: #6fc754;
         border: none;
@@ -451,7 +443,7 @@ ul, li {
         font-size: 18px;
     }
     &__form {
-        width: 500px;
+        max-width: 500px;
         height: 50px;
         border: 1px solid $inputgrey;
         border-radius: 50px;
@@ -472,13 +464,17 @@ ul, li {
     }
     &__carousel {
         min-height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         &__item {
             min-height: 750px;
+            max-width: 600px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 0 300px;
             &__img {
                 border-radius: 50%;
                 box-shadow: 30px 30px 70px $grey;
@@ -790,5 +786,37 @@ ul, li {
                 margin-right: 20px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+        max-width: 100vw;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__menu {
+        display: none;
+    }
+    .about__text {
+        padding: 0 20px;
+    }
+    .worldwide__img {
+        display: none;
+    }
+    .protect__inner {
+        flex-direction: column;
+    }
+    .plan__inner {
+        flex-direction: column;
+    }
+    .plan__items {
+        flex-wrap: wrap;
+    }
+    .plan__choose {
+        max-width: 100%;
     }
 }
