@@ -475,12 +475,13 @@ ul, li {
         width: 100%;
     }
     &__carousel {
+        position: relative;
         width: 100%;
         min-height: 750px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         &__item {
             width: 100%;
             min-height: 750px;
@@ -516,6 +517,25 @@ ul, li {
                 text-transform: uppercase;
             }
         }
+        &__arrow {
+            position: absolute;
+            top: 20%;
+            color: $grey;
+            font-size: 50px;
+            cursor: pointer;
+            &:hover {
+                color: darken($grey, 10%);
+            }
+            &:active {
+                color: darken($grey, 20%);
+            }
+            &--prev {
+                left: 60px;
+            }
+            &--next {
+                right: 60px;
+            }
+        }
     }
 }
 
@@ -523,13 +543,14 @@ ul, li {
 /*********PLAN*********/
 .plan {
     &__inner {
+        width: 100%;
         min-height: 900px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__choose {
-        max-width: 30%;
+        width: 30%;
         &__header {
             font-size: 42px;
             font-weight: 400;
@@ -812,6 +833,12 @@ ul, li {
         display: flex;
         flex-direction: column;
     }
+    .header.active {
+        display: none;
+    }
+    .header__burger {
+        margin-left: 30px;
+    }
     .header__menu {
         display: none;
     }
@@ -824,14 +851,21 @@ ul, li {
     .protect__inner {
         flex-direction: column;
     }
+    .protect__img {
+        display: none;
+    }
     .plan__inner {
         flex-direction: column;
+        justify-content: center;
     }
     .plan__items {
         flex-wrap: wrap;
     }
     .plan__choose {
-        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .footer__copyright {
         justify-content: center;
