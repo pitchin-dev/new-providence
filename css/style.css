@@ -283,6 +283,9 @@ ul, li {
 
 .worldwide__block {
   width: 50%; }
+  .worldwide__block--right {
+    position: absolute;
+    right: -200px; }
 
 .worldwide__header {
   font-size: 42px;
@@ -301,10 +304,6 @@ ul, li {
   text-transform: uppercase; }
   .worldwide__partners__logo {
     margin-right: 30px; }
-
-.worldwide__img {
-  position: absolute;
-  right: -200px; }
 
 /*********INTERFACE*********/
 .interface__inner {
@@ -688,7 +687,7 @@ ul, li {
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 10px;
+    padding: 0;
     max-width: 100vw; }
   .column {
     display: flex;
