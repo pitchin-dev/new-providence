@@ -339,6 +339,10 @@ ul, li {
     }
     &__block {
         width: 50%;
+        &--right {
+            position: absolute;
+            right: -200px;
+        }
     }
     &__header {
         font-size: 42px;
@@ -360,8 +364,7 @@ ul, li {
         }
     }
     &__img {
-        position: absolute;
-        right: -200px;
+        
     }
 }
 
